@@ -1,0 +1,144 @@
+// begin of R language shortcuts
+[{
+    "key": "ctrl+.",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus && editorLangId == 'r'",
+    "args": {
+        "snippet": " %>% "
+    }
+},
+{
+    "key": "ctrl+cmd+.",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus && editorLangId == 'r'",
+    "args": {
+        "snippet": " %<>% "
+    }
+},
+{
+    "key": "ctrl+cmd+t",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus && editorLangId == 'r'",
+    "args": {
+        "snippet": " %T>% "
+    }
+},
+{
+    "key": "ctrl+shift+.",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus && editorLangId == 'r'",
+    "args": {
+        "snippet": " |> "
+    }
+},
+{
+    "key": "ctrl+i",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus && editorLangId == 'r'",
+    "args": {
+        "snippet": " %chin% "
+    }
+},
+{
+    "key": "ctrl+alt+.",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus && editorLangId == 'r'",
+    "args": {
+        "snippet": " -> "
+    }
+},
+{
+    "key": "ctrl+,",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus && editorLangId == 'r'",
+    "args": {
+        "snippet": "<-"
+    }
+},
+{
+    "key": "ctrl+;",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus && editorLangId == 'r'",
+    "args": {
+        "snippet": ":="
+    }
+},
+{
+    "key": "cmd+;",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus && editorLangId == 'r'",
+    "args": {
+        "snippet": " := "
+    }
+}, 
+{
+    "key": "ctrl+b",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus && editorLangId == 'r'",
+    "args": {
+        "snippet": " %between% "
+    }
+}, 
+{
+    "key": "ctrl+l",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus && editorLangId == 'r'",
+    "args": {
+        "snippet": " %plike% "
+    }
+}, 
+{
+    "key": "ctrl+cmd+s",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus && editorLangId == 'r'",
+    "args": {
+        "snippet": ".SDcols"
+    }
+},
+{
+    "key": "ctrl+n",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus && editorLangId == 'r'",
+    "args": {
+        "snippet": " %notin% "
+    }
+},
+{
+    "key": "cmd+.",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus && editorLangId == 'r'",
+    "args": {
+        "name": "Enclose in .()"
+    }
+},
+{
+    "key": "ctrl+s",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus && editorLangId == 'r'",
+    "args": {
+        "snippet": ".SD"
+    }
+},
+{
+    "key": "ctrl+c",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus && editorLangId == 'r'",
+    "args": {
+        "name": "Enclose in c()"
+    }
+},
+{
+    "key": "cmd+m",
+    "command": "workbench.action.toggleActivityBarVisibility"
+},
+
+// python
+{
+    "key": "ctrl+.",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus && editorLangId == 'python'",
+    "args": {
+        "snippet": " >> "
+    }
+}
+]
