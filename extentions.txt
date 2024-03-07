@@ -51,6 +51,5 @@ VisualStudioExptTeam.intellicode-api-usage-examples
 VisualStudioExptTeam.vscodeintellicode
 vscode-icons-team.vscode-icons
 Vue.volar
-Vue.vscode-typescript-vue-plugin
 withfig.fig
 znck.grammarly
