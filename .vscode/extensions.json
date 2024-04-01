@@ -76,6 +76,9 @@
     "vscode-icons-team.vscode-icons",
     "file-icons.file-icons",
     "GitHub.github-vscode-theme",
-    "PKief.material-icon-theme"
+    "PKief.material-icon-theme",
+
+    // gltf
+    "cesium.gltf-vscode"
   ]
 }
