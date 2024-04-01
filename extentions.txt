@@ -53,3 +53,4 @@ vscode-icons-team.vscode-icons
 Vue.volar
 withfig.fig
 znck.grammarly
+cesium.gltf-vscode
