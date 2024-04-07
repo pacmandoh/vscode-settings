@@ -79,6 +79,9 @@
     "PKief.material-icon-theme",
 
     // gltf
-    "cesium.gltf-vscode"
+    "cesium.gltf-vscode",
+
+    // svg
+    "jock.svg"
   ]
 }
