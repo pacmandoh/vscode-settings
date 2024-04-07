@@ -1,4 +1,5 @@
 // begin of R language shortcuts
+// ! only for macOS !
 [{
     "key": "ctrl+.",
     "command": "editor.action.insertSnippet",
