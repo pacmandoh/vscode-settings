@@ -54,3 +54,6 @@ Vue.volar
 withfig.fig
 znck.grammarly
 cesium.gltf-vscode
+yzhang.markdown-all-in-one
+shd101wyy.markdown-preview-enhanced
+davidanson.vscode-markdownlint
