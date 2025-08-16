@@ -1,92 +1,89 @@
 {
   "recommendations": [
-    // misc
-    "aaron-bond.better-comments",
-    "antfu.browse-lite",
-    "antfu.goto-alias",
+    // ========== Core Development ==========
     "EditorConfig.EditorConfig",
     "formulahendry.code-runner",
-    "lokalise.i18n-ally",
-    "MS-CEINTL.vscode-language-pack-zh-hans",
-    "ms-playwright.playwright",
-    "ms-vscode-remote.remote-ssh",
-    "ms-vscode-remote.remote-ssh-edit",
     "ms-vscode.live-server",
-    "ms-vscode.remote-explorer",
-    "naumovs.color-highlight",
-    "withfig.fig", // only for mac
-    "znck.grammarly",
-    "sirmspencer.vscode-autohide",
-    "streetsidesoftware.code-spell-checker",
-    "tal7aouy.rainbow-bracket",
     "usernamehw.errorlens",
-    "VisualStudioExptTeam.intellicode-api-usage-examples",
+    "streetsidesoftware.code-spell-checker",
     "VisualStudioExptTeam.vscodeintellicode",
+    "VisualStudioExptTeam.intellicode-api-usage-examples",
 
-    // git & github
-    "antfu.open-in-github-button",
+    // ========== Version Control ==========
     "eamodio.gitlens",
+    "antfu.open-in-github-button",
     "fabiospampinato.vscode-open-in-github",
     "github.vscode-github-actions",
 
-    // linter
-    "dbaeumer.vscode-eslint",
-    "stylelint.vscode-stylelint",
+    // ========== Remote Development ==========
+    "ms-vscode-remote.remote-ssh",
+    "ms-vscode-remote.remote-ssh-edit",
+    "ms-vscode.remote-explorer",
 
-    // shell
-    "Remisa.shellman",
-    "timonwong.shellcheck",
-    "foxundermoon.shell-format",
-
-    // yaml
-    "redhat.vscode-yaml",
-
-    // nuxt & vue & typescript & tailwindcss
-    "Nuxt.mdc",
-    "Nuxtr.nuxt-vscode-extentions",
-    "Nuxtr.nuxtr-vscode",
-    "Vue.volar",
-    "Vue.vscode-typescript-vue-plugin",
-    "johnsoncodehk.vscode-tsconfig-helper",
-    "bradlc.vscode-tailwindcss",
-
-    // python
-    "ms-python.autopep8",
+    // ========== Language Support ==========
+    // -- Python --
     "ms-python.python",
     "ms-python.vscode-pylance",
-    "njpwerner.autodocstring",
+    "ms-python.autopep8",
     "KevinRose.vsc-python-indent",
-    "donjayamanne.python-environment-manager",
+    "njpwerner.autodocstring",
+    
+    // -- JavaScript/TypeScript --
+    "dbaeumer.vscode-eslint",
+    "johnsoncodehk.vscode-tsconfig-helper",
+    
+    // -- R Language --
+    "REditorSupport.r",
+    "RDebugger.r-debugger",
+    "REditorSupport.r-syntax",
+    
+    // -- Shell Scripting --
+    "timonwong.shellcheck",
+    "foxundermoon.shell-format",
+    "Remisa.shellman",
+    
+    // -- Configuration Files --
+    "redhat.vscode-yaml",
+    
+    // -- Internationalization --
+    "lokalise.i18n-ally",
+    "MS-CEINTL.vscode-language-pack-zh-hans",
 
-    // jupyter
+    // ========== Data Science ==========
     "ms-toolsai.jupyter",
     "ms-toolsai.jupyter-keymap",
     "ms-toolsai.jupyter-renderers",
     "ms-toolsai.vscode-jupyter-cell-tags",
     "ms-toolsai.vscode-jupyter-slideshow",
+    "ms-playwright.playwright",
 
-    // r-lang
-    "REditorSupport.r",
-    "RDebugger.r-debugger",
-
-    // latex
-    "James-Yu.latex-workshop",
-
-    // theme & icons
-    "vscode-icons-team.vscode-icons",
-    "file-icons.file-icons",
-    "GitHub.github-vscode-theme",
-    "PKief.material-icon-theme",
-
-    // gltf
+    // ========== Web Development ==========
+    "bradlc.vscode-tailwindcss",
     "cesium.gltf-vscode",
-
-    // svg
     "jock.svg",
 
-    // markdown
+    // ========== Documentation ==========
     "yzhang.markdown-all-in-one",
     "shd101wyy.markdown-preview-enhanced",
-    "davidanson.vscode-markdownlint"
+    "davidanson.vscode-markdownlint",
+
+    // ========== Code Enhancement ==========
+    "aaron-bond.better-comments",
+    "antfu.browse-lite",
+    "naumovs.color-highlight",
+    "tal7aouy.rainbow-bracket",
+    "sirmspencer.vscode-autohide",
+
+    // ========== AI Assistance ==========
+    "GitHub.copilot",
+    "GitHub.copilot-chat",
+    "openai.chatgpt",
+    "znck.grammarly",
+
+    // ========== UI & Themes ==========
+    "GitHub.github-vscode-theme",
+    "PKief.material-icon-theme",
+    "file-icons.file-icons",
+    "vscode-icons-team.vscode-icons"
   ]
 }
