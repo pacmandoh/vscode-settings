@@ -1,7 +1,7 @@
 {
   // Visuals
+  "workbench.preferredLightColorTheme": "Default Dark+",
   "workbench.editor.tabActionLocation": "left",
-  "workbench.colorTheme": "Default Dark+",
   "workbench.iconTheme": "file-icons",
   "workbench.sideBar.location": "right",
   "workbench.editor.tabCloseButton": "left",
@@ -14,11 +14,15 @@
   "files.exclude": {
     "**/__pycache__": true,
     "**/.ipynb_checkpoints": true,
+    "**/._*": true
     // "**/.*": true
   },
   "files.associations": {
     "*.css": "tailwindcss",
-    "*.rmd": "markdown"
+    "*.rmd": "markdown",
+    "*.cjson": "jsonc",
+    "*.wxss": "css",
+    "*.wxs": "javascript"
   },
 
   // Editor
@@ -31,7 +35,7 @@
   "editor.snippetSuggestions": "bottom",
   "editor.minimap.size": "fit",
   "editor.minimap.enabled": false,
-  "editor.minimap.autohide": true,
+  "editor.minimap.autohide": "mouseover",
   "editor.quickSuggestions": {
     "strings": true
   },
@@ -49,7 +53,7 @@
   "editor.hover.sticky": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": "never",
-    "source.fixAll.eslint": "explicit",
+    "source.fixAll.eslint": "always",
     "source.organizeImports": "never",
     "source.fixAll.markdownlint": "always"
   },
@@ -87,6 +91,8 @@
     "**/.pnpm": true,
     "**/.vscode": true,
     "**/.yarn": true,
+    "**/renv": true,
+    "**/renv.lock": true,
     "**/bower_components": true,
     "**/dist/**": true,
     "**/logs": true,
@@ -130,40 +136,30 @@
       "severity": "off"
     }
   ],
-  "eslint.validate": [
-    "javascript",
-    "typescript",
-    "javascriptreact",
-    "typescriptreact",
-    "vue",
-    "html",
-    "markdown",
-    "json",
-    "jsonc",
-    "json5"
-  ],
+  // "eslint.validate": [
+  //   "javascript",
+  //   "typescript",
+  //   "javascriptreact",
+  //   "typescriptreact",
+  //   "vue",
+  //   "html",
+  //   "markdown",
+  //   "json",
+  //   "jsonc",
+  //   "json5"
+  // ],
 
   // i18n-ally
   "i18n-ally.autoDetection": false,
   "i18n-ally.displayLanguage": "en",
   "i18n-ally.ignoredLocales": [],
-  // svg
   "svg.preview.mode": "svg",
 
-  // prettier
-  "prettier.enable": false,
-  "prettier.printWidth": 200,
-  "prettier.semi": false,
-  "prettier.singleQuote": true,
-
-  // code-spell-checker
-  "cSpell.allowCompoundWords": true,
-  "cSpell.language": "en,en-US",
+  // "githubIssues.workingIssueFormatScm": "#${issueNumberLabel}",
+  // "githubPullRequests.fileListLayout": "tree",
 
   // css lint
   "css.lint.hexColorLength": "ignore",
-  // "githubIssues.workingIssueFormatScm": "#${issueNumberLabel}",
-  // "githubPullRequests.fileListLayout": "tree",
 
   // gitlens && git
   "git.autofetch": true,
@@ -216,147 +212,10 @@
       "stash": true
     }
   },
-  "gitlens.ai.experimental.provider": "openai",
-  "gitlens.ai.experimental.openai.model": "gpt-3.5-turbo-1106",
-
-  // latex-workshop
-  "latex-workshop.latex.tools": [
-    {
-      "name": "pdflatex",
-      "command": "pdflatex",
-      "args": [
-        "-synctex=1",
-        "-interaction=nonstopmode",
-        "-file-line-error",
-        "%DOCFILE%"
-      ]
-    },
-    {
-      "name": "xelatex",
-      "command": "xelatex",
-      "args": [
-        "-synctex=1",
-        "-interaction=nonstopmode",
-        "-file-line-error",
-        "%DOCFILE%"
-      ]
-    },
-    {
-      "name": "bibtex",
-      "command": "bibtex",
-      "args": [
-        "%DOCFILE%"
-      ]
-    },
-    {
-      "name": "tectonic",
-      "command": "tectonic",
-      "args": [
-        "-X",
-        "compile",
-        "--keep-intermediates",
-        "--keep-logs",
-        "%DOC%.tex"
-      ]
-    }
-  ],
-  "latex-workshop.latex.recipes": [
-    {
-      "name": "xelatex",
-      "tools": [
-        "xelatex"
-      ],
-    },
-    {
-      "name": "pdflatex",
-      "tools": [
-        "pdflatex"
-      ]
-    },
-    {
-      "name": "xe->bib->xe->xe",
-      "tools": [
-        "xelatex",
-        "bibtex",
-        "xelatex",
-        "xelatex"
-      ]
-    },
-    {
-      "name": "pdf->bib->pdf->pdf",
-      "tools": [
-        "pdflatex",
-        "bibtex",
-        "pdflatex",
-        "pdflatex"
-      ]
-    },
-    {
-      "name": "tectonic",
-      "tools": ["tectonic"]
-    }
-  ],
-  "latex-workshop.latex.clean.fileTypes": [
-    "*.gz",
-    "*.aux",
-    "*.bbl",
-    "*.blg",
-    "*.idx",
-    "*.ind",
-    "*.lof",
-    "*.lot",
-    "*.out",
-    "*.toc",
-    "*.acn",
-    "*.acr",
-    "*.alg",
-    "*.glg",
-    "*.glo",
-    "*.gls",
-    "*.ist",
-    "*.fls",
-    "*.log",
-    "*.fdb_latexmk"
-  ],
-  "latex-workshop.view.pdf.viewer": "tab", // "none" "browser" "tab" "external"
-  "latex-workshop.latex.autoBuild.run": "onFileChange",
-  "latex-workshop.showContextMenu": true,
-  "latex-workshop.message.error.show": false,
-  "latex-workshop.message.warning.show": false,
-  "latex-workshop.intellisense.package.enabled": true,
-  "latex-workshop.latex.autoClean.run": "onBuilt", // "never"
-  "latex-workshop.latex.recipe.default": "lastUsed",
-  "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
-
-  // LTeX 配置
-  // "ltex.language": "en-US",
-  // "ltex.enabled": ["latex"],
-  // "ltex.dictionary": {},
-  // "ltex.latex.commands": {
-  //     "\\ref{}": "ignore",
-  //     "\\documentclass[]{}": "ignore",
-  //     "\\cite{}": "dummy",
-  //     "\\cite[]{}": "dummy"
-  // },
-  // "ltex.latex.environments": {
-  //     "lstlisting": "ignore",
-  //     "verbatim": "ignore"
-  // },
-  // "ltex.markdown.nodes": {
-  //     "CodeBlock": "ignore",
-  //     "FencedCodeBlock": "ignore",
-  //     "AutoLink": "dummy",
-  //     "Code": "dummy"
-  // },
-  // "ltex.additionalRules.enablePickyRules": true,
-  // "ltex.additionalRules.motherTongue": "en-US",
-  // "ltex.diagnosticSeverity": "information",
-  // "ltex.ltex-ls.logLevel": "finer",
-  // "ltex.sentenceCacheSize": 2000
 
   // r-lang & vscode-R
-  "r.plot.defaults.fullWindowMode": true,
   "r.plot.useHttpgd": true,
+  "r.plot.defaults.fullWindowMode": true,
   "r.rpath.mac": "/usr/local/bin/R",
   "r.rmarkdown.codeLensCommands": [
     "r.runCurrentChunk",
@@ -368,7 +227,8 @@
   "r.rterm.mac": "/usr/local/bin/R",
   "[r]": {
     "editor.formatOnSave": true,
-    "editor.formatOnPaste": true
+    "editor.formatOnPaste": true,
+    "editor.defaultFormatter": "REditorSupport.r"
   },
   "[rmd]": {
     "editor.formatOnPaste": true,
@@ -392,26 +252,7 @@
   // vsicons
   "vsicons.dontShowNewVersionMessage": true,
 
-  // nuxtr
-  "nuxtr.defaultPackageManager": "pnpm",
-  "nuxtr.openItemsAfterCreation": true,
-  "nuxtr.vueFiles.firstTag": "template",
-  "nuxtr.vueFiles.script.type": "setup",
-  "nuxtr.vueFiles.script.defaultLanguage": "ts",
-  "nuxtr.vueFiles.style.addStyleTag": true,
-  "nuxtr.vueFiles.style.alwaysScoped": true,
-  "nuxtr.vueFiles.style.defaultLanguage": "scss",
-  "nuxtr.piniaFiles.defaultTemplate": "options",
-  "nuxtr.intellisense.nuxtrc": true,
-  "nuxtr.intellisense.vueFiles": true,
-  "nuxtr.intellisense.nuxtignore": true,
-
   // "vueFiles.template.defaultLanguage": "html",
-
-  // yaml
-  "yaml.schemas": {
-    "file:///home/pacmandoh/.vscode-server/extensions/docsmsft.docs-yaml-1.0.1/dist/toc.schema.json": "/toc\\.yml/i"
-  },
 
   // tailwindcss
   // adapting to nuxt/ui
@@ -518,10 +359,30 @@
     "vite.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
     "vue.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*"
   },
-  
+
+  // formatter
+  "[vue]": {
+    // "editor.defaultFormatter": "Vue.volar"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
+
   // markdownlint
-  "editor.someSetting": true,
   "markdownlint.config": {
     "no-inline-HTML": false
-  }
+  },
+
+  // markdown-preview-enhanced
+  "markdown-preview-enhanced.enablePreviewZenMode": false,
+  "markdown-preview-enhanced.previewTheme": "github-light.css",
+  "markdown-preview-enhanced.codeBlockTheme": "github.css",
+
+  "redhat.telemetry.enabled": true,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "emmet.includeLanguages": {
+    "wxml": "html"
+  },
+  "minapp-vscode.disableAutoConfig": true,
+  "python.analysis.typeCheckingMode": "standard",
 }
